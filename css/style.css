@@ -1,4 +1,58 @@
+:root {
+  --vermelho-claro: hsl(0, 36%, 70%);
+  --vermelho: hsl(0, 93%, 68%);
+  --vermelho-escuro: hsl(0, 6%, 24%);
+  --gradiente1: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+  --gradiente2: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+}
+
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
+  background: hsl(352, 100%, 98%);
+}
+
+header {
+  height: 6rem;
+}
+
+.logo {
+  width: auto;
+  max-height: 25%;
+  padding: 2.1rem 0 0 2.1rem;
+}
+
+.anuncio {
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+h1 p:first-child {
+  font-weight: 300;
+  color: var(--vermelho-claro);
+}
+
+h1 p:last-child {
+  font-weight: 600;
+  color: var(--vermelho-escuro);
+}
+
+.descricao {
+  color: var(--vermelho-claro);
+  padding: 1rem 1.3rem;
+  text-align: center;
+  line-height: 1.2rem;
+}
+
+.email {
+  display: block;
+  margin: 1rem auto 6rem auto;
+  height: 45px;
+  width: 80vw;
+  border: 1px solid var(--vermelho-claro);
+  border-radius: 60px;
+  background: transparent;
 }
