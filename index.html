@@ -20,49 +20,45 @@
     />
   </head>
   <body>
-    <header>
-      <img src="images/logo.svg" alt="Logo" class="logo" />
-    </header>
+    <div class="conteudo__pagina">
+      <header>
+        <img src="images/logo.svg" alt="Logo" class="logo" />
+      </header>
 
-    <main>
-      <div class="container">
-        <picture>
-          <source
-            media="(min-width: 1024px"
-            srcset="images/hero-desktop.jpg"
-            type="image/jpg"
-          />
-          <img src="images/hero-mobile.jpg" alt="Banner" class="banner" />
-        </picture>
+      <div class="conteudo__main">
+        <main>
+          <div class="banner"></div>
+          <div class="container">
+            <div class="textos">
+              <h1 class="anuncio">
+                <p>We're <br /></p>
+                <p>
+                  coming <br />
+                  soon
+                </p>
+              </h1>
+              <p class="descricao">
+                Hello fellow shoppers! We're currently building our new fashion
+                store. Add your email below to stay up-to-date with
+                announcements and our launch deals.
+              </p>
 
-        <div class="textos">
-          <h1 class="anuncio">
-            <p>We're <br /></p>
-            <p>
-              coming <br />
-              soon
-            </p>
-          </h1>
-          <p class="descricao">
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-
-          <form class="formulario" action="/">
-            <input
-              type="email"
-              name=""
-              id="email"
-              name="email"
-              placeholder="Email Address"
-            />
-            <button type="submit" class="botao">
-              <img src="images/icon-arrow.svg" alt="Ícone de flecha" />
-            </button>
-          </form>
-        </div>
+              <form class="formulario" action="/">
+                <input
+                  type="email"
+                  name=""
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                />
+                <button type="submit" class="botao">
+                  <img src="images/icon-arrow.svg" alt="Ícone de flecha" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </main>
       </div>
-    </main>
+    </div>
   </body>
 </html>

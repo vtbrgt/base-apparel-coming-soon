@@ -23,7 +23,11 @@ header {
 }
 
 .banner {
-  width: 100vw;
+  height: 40vh;
+  width: 100%;
+  background-image: url("../images/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .anuncio {
@@ -83,6 +87,21 @@ input {
 }
 
 @media (min-width: 1024px) {
+  .conteudo__pagina {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .conteudo__main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .banner {
+    height: 60vh;
+    background-image: url("../images/hero-desktop.jpg");
+  }
+
   .container {
     display: flex;
     flex-direction: row-reverse;
