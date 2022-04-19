@@ -71,6 +71,10 @@ input {
   background: transparent;
 }
 
+input:invalid {
+  border-color: var(--vermelho);
+}
+
 ::-webkit-input-placeholder {
   font-family: "Josefin Sans", sans-serif;
   color: var(--vermelho-claro);
@@ -83,6 +87,10 @@ input {
   border: none;
   border-radius: 60px;
   background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.erro_email {
+  color: var(--vermelho);
 }
 
 @media (min-width: 1024px) {
@@ -138,16 +146,17 @@ input {
     cursor: pointer;
     transform: scale(1.2);
     transition: all 0.5s ease;
+    box-shadow: 5px 5px 15px 5px #ffd0d0;
   }
 
-  .botao:active {
+  /*   .botao:active {
     background-image: linear-gradient(
       135deg,
       from hsl(0, 0%, 100%),
       to hsl(0, 100%, 98%)
     );
   }
-
+ */
   .banner__desktop {
     width: auto;
     height: 100vh;
